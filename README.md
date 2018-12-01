@@ -1,3 +1,2 @@
-# Jeito caixa de atender
-Caixa: Jeito Caixa
+# Compromisso caixa
 Para acessar: https://thsl.github.io/compromisso-caixa/
