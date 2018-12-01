@@ -1,97 +1,13 @@
-
-#home {
-  background: url("@{image-path-theme}/backgrounds/bg-01.jpg") center left no-repeat #fff;
-  background-size: cover;
-
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  @media (max-width: @screen-lg) {
-  }
-  @media (max-width: @screen-sm) {
-
-  }
-  .img-big {
-    position: absolute;
-    min-height: 100vh;
-    width: 60%;
-    overflow: hidden;
-    .img-big-content {
-      position: absolute;
-      bottom: 0;
-      left: -120px;
-      @media (max-width: @screen-sm) {
-        display: none;
-      }
-    }
-    @media (max-width: @screen-sm) {
-      width: 100%;
-      position: relative;
-      height: auto;
-      min-height: auto;
-    }
-  }
-
-
-
-  .content-master {
-    min-height: 100vh;
-    .clearfix();
-    width: 50%;
-    float: right;
-    position: relative;
-    .content-master-inner {
-      position: absolute;
-      top: 21%;
-      padding: 30px;
-      @media (max-width: @screen-sm) {
-        width: 100%;
-        top: 50px;
-        float: none;
-        position: relative;
-      }
-    }
-    @media (max-width: @screen-sm) {
-      width: 100%;
-      top: 50px;
-      float: none;
-    }
-  }
-
-  .logo-compromisso {
-    top: 25%;
-    right: 25%;
-    position: absolute;
-    @media (max-width: @screen-sm) {
-      top: 20px;
-      right: 0;
-      left: 10px;
-      position: relative;
-    }
-  }
-}
-
 .wrapper {
   overflow: hidden;
   min-height: 100vh;
+  width: 100%;
   .clearfix();
 }
 
-
-.footer-assina-home {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  //height: 30px;
-  padding: 0 0 60px 0;
-}
-
-
-#enviar {
-  background: url("@{image-path-theme}/backgrounds/bg-01.jpg") center left no-repeat #fff;
+#home {
+  background: url("@{image-path-theme}/backgrounds/bck-001.jpg") center left no-repeat #fff;
   background-size: cover;
-
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -100,71 +16,94 @@
   @media (max-width: @screen-sm) {
 
   }
-  .img-big {
-    position: absolute;
-    min-height: 100vh;
-    width: 60%;
-    overflow: hidden;
-    right: 0;
-    .img-big-content {
-      position: absolute;
-      bottom: 0;
-      right: -120px;
-      @media (max-width: @screen-sm) {
-        display: none;
-      }
-    }
-    @media (max-width: @screen-sm) {
-      width: 100%;
-      position: relative;
-      height: auto;
-      min-height: auto;
-    }
-  }
-
-  .footer-assina {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    //height: 30px;
-    padding: 0 0 60px 0;
-  }
 
   .content-master {
-    min-height: 100vh;
+
     .clearfix();
-    width: 50%;
-    float: left;
-    position: relative;
+
     .content-master-inner {
-      position: absolute;
-      top: 21%;
-      padding: 30px;
-      left: 20%;
+
       @media (max-width: @screen-sm) {
-        width: 100%;
-        top: 50px;
-        float: none;
-        position: relative;
+
       }
     }
     @media (max-width: @screen-sm) {
-      width: 100%;
-      top: 50px;
-      float: none;
+
     }
   }
 
   .logo-compromisso {
-    top: 25%;
-    right: 25%;
-    position: absolute;
+
     @media (max-width: @screen-sm) {
-      top: 20px;
-      right: 0;
-      left: 10px;
-      position: relative;
+
+    }
+  }
+}
+
+.box-base {
+  position: relative;
+}
+
+.box-content {
+  position: relative;
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-color: #2e6da4;
+  border-radius: 8px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 60px 163px 0px rgba(48, 89, 149, 1);
+  -moz-box-shadow: 0px 60px 163px 0px rgba(48, 89, 149, 1);
+  box-shadow: 0px 60px 163px 0px rgba(48, 89, 149, 1);
+}
+
+.pagnumber {
+
+  min-height: 90px;
+  padding: 24px 30px 16px 50px;
+  &.number01 {
+    background: url("@{image-path-theme}/structure/n1.png") center left no-repeat transparent;
+    background-size: contain;
+  }
+  &.number02 {
+    background: url("@{image-path-theme}/structure/n2.png") center left no-repeat transparent;
+    background-size: contain;
+  }
+  &.number03 {
+    background: url("@{image-path-theme}/structure/n3.png") center left no-repeat transparent;
+    background-size: contain;
+  }
+  &.number04 {
+    background: url("@{image-path-theme}/structure/n4.png") center left no-repeat transparent;
+    background-size: contain;
+  }
+}
+
+.menu-indicator {
+  position: absolute;
+  width: 141px;
+  right: -24px;
+  bottom: 0;
+  .list-indicator {
+    width: 141px;
+    margin: 0;
+    a {
+      color: @white;
+    }
+  }
+  .list-indicator-item {
+    height: 67px;
+    padding: 24px 0 0 0;
+    text-indent: -35px;
+    &.inactive {
+      background: url("@{image-path-theme}/backgrounds/bck-menu-inactive.jpg") center left no-repeat #5c7ac9;
+      background-size: cover;
+      color: #a6bbe7;
+    }
+    &.active {
+      background: url("@{image-path-theme}/backgrounds/bck-menu-active.jpg") center left no-repeat #5c7ac9;
+      background-size: cover;
+      color: @white;
     }
   }
 }
